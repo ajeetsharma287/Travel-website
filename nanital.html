@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PathVenture</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="./pics/logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="nani.css" />
+  </head>
+  <body>
+    <header>
+      <img src="pics/logo.png" alt="" height="50" width="50" />
+      <a href="https://www.instagram.com/adventuresquad.in/" class="logo"
+        ><span>PATH</span>VENTURE</a
+      >
+
+      <!-- <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav> -->
+
+      <div class="icons">
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="default gallery">
+        <div class="main-img">
+          <img class="active" src="pics/nani.JPG" alt="product-img" />
+          <img src="pics/np1.webp" alt="product-img" />
+          <img src="pics/np2.webp" alt="product-img" />
+          <img src="pics/np3.webp" alt="product-img" />
+        </div>
+        <div class="thumb-list">
+          <div class="active">
+            <img src="pics/nani.JPG" alt="product-img" />
+          </div>
+          <div>
+            <img src="pics/np1.webp" alt="product-img" />
+          </div>
+          <div>
+            <img src="pics/np2.webp" alt="product-img" />
+          </div>
+          <div>
+            <img src="pics/np3.webp" alt="product-img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox">
+        <div class="gallery">
+          <div class="main-img">
+            <!-- icons -->
+            <span class="icon-close">
+              <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                  fill="#69707D"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <span class="icon-prev">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 1 3 9l8 8"
+                  stroke="#1D2026"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <span class="icon-next">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m2 1 8 8-8 8"
+                  stroke="#1D2026"
+                  stroke-width="3"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+
+            <!-- main images -->
+            <img class="active" src="pics/nani.JPG" alt="product-img" />
+            <!-- <img src="pics/nani.JPG" alt="product-img" /> -->
+            <img src="pics/np1.webp" alt="product-img" />
+            <img src="pics/np2.webp" alt="product-img" />
+            <img src="pics/np3.webp" alt="product-img" />
+          </div>
+          <div class="thumb-list">
+            <div class="active">
+              <img
+                src="pics/nani.JPG"
+                alt="product-img"
+              />
+            </div>
+            <div>
+              <img
+                src="pics/np1.webp"
+                alt="product-img"
+              />
+            </div>
+            <div>
+              <img
+                src="pics/np2.webp"
+                alt="product-img"
+              />
+            </div>
+            <div>
+              <img
+                src="pics/np3.webp"
+                alt="product-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h3>NANITAL</h3>
+        <h2 class="product-name">Lake District of India</h2>
+        <p class="product-desc">
+          Nainital is renowned for its breathtaking natural beauty, featuring picturesque lakes, lush greenery, and stunning mountain views. The town is centered around Naini Lake, which is a major attraction for tourists and locals alike, offering boating, strolling, and scenic views.
+          The area is also home to several other lakes such as Bhimtal, Khurpatal, and Sukha Tal, each providing unique vistas and recreational opportunities.
+        </p>
+        <div class="price-info">
+          <div class="price">
+            <span class="current-price">2399.00</span>
+            <span class="discount">7.6%</span>
+          </div>
+          <div class="prev-price">2599.00</div>
+          </div>
+          <button class="add-to-cart">
+            <span>Book now</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="comment-section">
+      <h2>Comments</h2>
+      <form class="comment-form">
+          <input type="text" id="name" placeholder="Your name" required>
+          <textarea id="comment" rows="3" placeholder="Write your comment..." required></textarea>
+          <button type="submit">Post Comment</button>
+      </form>
+      <div class="comments-container"></div>
+      <button onclick="clearAllComments()" class="admin-clear-btn">
+        Clear All Comments
+    </button>
+  </section>
+
+  <script src="nani.js"></script>
+  </body>
+</html>
